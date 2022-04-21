@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English School</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style= "background-color: #5271FF;">
+           
+            <div class="container-fluid">
+             
+               <img src="/img/English School.png" alt="">
+                <!--   https://i.ibb.co/b1KW9jp/ES-1.png-->
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#profesores">Profesores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contactanos!</a>
+                  </li>
+                </ul>
+                <div class="sesion">
+                    <button class="btn btn-outline-success me-2 " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrate Gratis</button>
+                    <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#iniciarModal">Iniciar Sesion</button>
+
+                    <div class="modal fade" id="iniciarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header" style="background-color: hsla(175, 48%, 49%, 0.31) ;;">
+                            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form action="">
+                              <div class="mb-3">
+                                
+                                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required title="Ingresa tu correo para ingresar" maxlength="30">
+                                
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required title="Ingresa tu contraseña para ingresar" maxlength="15">
+                              </div>
+                           
+                          </div>
+                          <div class="mb-3 form-check d-flex justify-content-center align-items-center">
+                            <input type="checkbox" class="form-check-input" id="recodarCheck1" style="margin-top: 1rem;" >
+        
+                            
+                            <label class="form-check-label" for="recordarCheck1" style="padding-left: 1rem;">Recordar correo</label>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <input type="submit" value="Iniciar" class="btn btn-primary">
+                          </div>
+                         </form>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <section id="carrusel">
+        <div id="carouselExampleIndicators" class="carousel slide d-md-none" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/carrusel/promo600.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/carrusel/descuento600.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/carrusel/aprendizajeOnline600.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
+        </div>
+      </section>
+
+      <section>
+        <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/carrusel/promo1200.png" class="d-block w-100" alt="banner">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/carrusel/descuento1200.png.png" class="d-block w-100" alt="banner">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/carrusel/aprendizajeOnline1200.png" class="d-block w-100" alt="banner">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </section>
+
+      <section class="limitado">
+        <p>¡Por tiempo limitado! Sé bilingüe este 2022 con esta OFERTA ESPECIAL.</p>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Comienza ya!</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color: hsla(175, 48%, 49%, 0.31);">
+                <h5 class="modal-title" id="exampleModalLabel" >Registrate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="container">
+                    <div class="row d-flex justify-content-center" >
+                      <div class="col-10 col-md-6">
+                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" required maxlength="15">
+                    <label for="exampleInputEmail1" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" required maxlength="15">
+                      </div>
+                      <div class="col-10 col-md-6">
+                        <label for="exampleInputEmail1" class="form-label ">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" required >
+
+                      <label for="exampleInputEmail1" class="form-label ">Pais de Residencia</label>
+                       <select class="form-select" aria-label="Default select example" required>
+                        <option selected>Seleccione</option>
+                        <option value="1">Argentina</option>
+                       <option value="2">Uruguay</option>
+                        <option value="3">Paraguay</option>
+                       <option value="4">Chile</option>
+                       <option value="5">Perù</option>
+                       <option value="6">Bolivia</option>
+
+                    </select>
+                      </div>
+                    
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required maxlength="40">
+                    
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required maxlength="15">
+                  </div>
+                  <label for="exampleInputPassword2" class="form-label">Repita Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required maxlength="15">
+                  </div>
+
+                  <div class="terminos">
+                    
+                    <div class="mb-3 form-check d-flex justify-content-center align-items-center">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+
+                    
+                    <label class="form-check-label" for="exampleCheck1"><a href="">Acepta Terminos Y Condiciones</a> </label>
+                  </div>
+                
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <input type="submit" value="Registrarme Ahora" class="btn btn-primary">
+
+                  
+              </div>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="grillaTop">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 p-2 col-md-8">
+              <h3>English School te ofrece la mejor manera de aprender inglés</h3>
+              <h4>Curso de inglés completo</h4>
+              <p>Nuestro curso de inglés online consta de más de cien lecciones. Elige los temas que más te interesen, ya sean sobre cultura, historia o viajes. Incluso tenemos un curso de inglés de negocios, que te ayudará a mejorar tus oportunidades profesionales. ¡Con independencia de cuáles sean tus objetivos, tenemos algunas lecciones sencillas y divertidas para ti!</p>
+
+              <h4>Aprende a hablar inglés</h4>
+              <p>Aprende a hablar inglés con una combinación de nuestros ejercicios de pronunciación basados en la inteligencia artificial y diálogos realizados por nuestros expertos en la enseñanza de lenguas extranjeras. También puedes probar nuestros ejercicios de conversación y practicar conversando con los hablantes de inglés de nuestra comunidad online. Aprende a leer y hablar en inglés con artículos y vídeos amenos.</p>
+            </div>
+
+
+            <div class="col-8 col-md-4">
+              <div class="accordion" id="accordionExample" style="padding-top: 1rem;">
+                <h4>Eventos ESchool</h4>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      15 de abril - Campamento de Ingles 2022
+                    </button>
+                  </h2>
+                  
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                   
+                    <div class="accordion-body">
+                     
+                      <div class="card " style="width: 100%;">
+                        <img src="/img/campamento de ingles.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Si ya sos miembro de English School podes sumar a tus hijos a este y como todos los años a nuestro campamento de ingles.</p>
+                          <a href="#" class="btn btn-primary">Saber mas</a>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      22 de abril - Curso de Profesorado
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      
+                      <div class="card " style="width: 100%;">
+                        <img src="/img/profesorado.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Si culminaste tus escudios de ingles con English School, te ofresemos nuestro curso de profesorado totalmente gratis de 3 meses de duracion.</p>
+                          <a href="#" class="btn btn-primary">Saber mas</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      2 de mayo - Charla con los expertos
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      
+                      <div class="card " style="width: 100%;">
+                        <img src="/img/charlaExtertos.jpg" class="card-img-top" alt="charla">
+                        <div class="card-body">
+                    
+                          <p class="card-text">Sumate este 2 de mayo a nuestra charla con los expertos. En la que hablaremos de que trata English School y muchas cosas mas que se estan por venir.</p>
+                          <a href="#" class="btn btn-primary">Saber mas</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            
+          </div>
+        </div>
+
+      </section>
+
+      <section class="herramienta">
+        <div class="container ">
+          <div class="row d-flex justify-content-center">
+            <div id="funcionalidad">
+              <h3>¿Cómo pueden ayudarte ESchool con sus funcionalidades para poder dominar el  ingles?</h3>
+            </div>
+            <div class="col-6 col-md-3">
+              
+              <div>
+                <img src="https://cdn.pixabay.com/photo/2017/06/10/06/39/calender-2389150_960_720.png" alt="">
+                <h4>Crea un plan de estudio</h4>
+                <p>¡Nosotros nos ocupamos del trabajo duro! Tú decides cuándo y cuánto aprender y nosotros te creamos un plan de estudio personalizado, que te ayudará a aprender más rápidamente.</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3" >
+              <div>
+                <img src="https://cdn.pixabay.com/photo/2017/06/10/07/18/list-2389219_960_720.png" alt="">
+              </div>
+              <h4>Mantente motivado</h4>
+              <p>Mejora tu vocabulario en inglés: es rápido y fácil con el Entrenador de vocabulario de English School. Con esta funcionalidad, puedes aprender nuevas palabras en inglés o revisar las que ya has aprendido.</p>
+            </div>
+            <div class="col-6 col-md-3" >
+              <div >
+                <img src="https://cdn.pixabay.com/photo/2017/06/10/07/21/chat-2389223_960_720.png" alt="">
+                <h4>Clases de Consulta</h4>
+                <p>Hacemos seguimiento de tu progreso y constata cómo tu nivel de fluidez mejora con el tiempo. No te pierdas las clases de Consulta, te mantendremos centrad@ y motivad@ con una serie de ejercicios amenos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="profesores">
+        <div class="container">
+          <h3>¡Conoce a nuestros profesores
+            expertos!</h3>
+          <div class="row d-flex justify-content-center">
+            <div class="col-10 col-lg-3 col-sm-6" style="width: 15rem;" >
+              <div>
+                <div class="card" style="width: 100%;">
+                  <img src="/img/profesores/Carla.png" class="card-img-top" alt="profe" >
+                  <div class="card-body">
+                    <h5 class="card-title">Carla</h5>
+                    <p class="card-text">Tengo mas de 7 años de experiencia enseñando en English School. Después de pasar tiempo como voluntaria con hablantes nativos de español, combiné los dos y me convertí en profesora del curso.</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-lg-3 col-sm-6" style="width: 15rem;">
+              <div class="card" style="width: 100%;">
+                <img src="/img/profesores/Fernando.png" class="card-img-top" alt="profe">
+                <div class="card-body">
+                  <h5 class="card-title">Fernando</h5>
+                  <p class="card-text">Pase 5 años en México trabajando en edición de videos, cuento con experiencia como maestro de inglés, hablo español y llevo 5 años trabajando con English School. Disfruto de viajar y conocer diferentes culturas. ¡Espero conocerte pronto!</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-lg-3 col-sm-6" style="width: 15rem;">
+              <div class="card" style="width: 100%;">
+                <img src="/img/profesores/Maria.png" class="card-img-top" alt="profe">
+                <div class="card-body">
+                  <h5 class="card-title">Maria</h5>
+                  <p class="card-text">Despues de trabajar en negocios internacionales por dos años, decidí trasladarme a Ecuador, donde empecé mi carrera como maestra de inglés en el 2011. Tengo más de 7 años dando clases de inglés en línea a estudiantes en Asia y Latinoamérica.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-lg-3 col-sm-6" style="width: 15rem;">
+              <div class="card" style="width: 100%;">
+                <img src="/img/profesores/Damian.png" class="card-img-top" alt="profe">
+                <div class="card-body">
+                  <h5 class="card-title">Damian</h5>
+                  <p class="card-text">Para mì el ingles es para todos y ¡disfruto ayudando a otros a aprender! English Shoool es una excelente manera de llegar a más estudiantes. La mejor recompensa para mí, cuando enseño, es verlos avanzar en sus conocimientos de inglés.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+
+      <section id="nosotros">
+       
+        <div class="container">
+          <h3>Nosotros</h3>
+          <div class="row d-flex justify-content-center">
+            
+            <div class="col-11 col-md-5">
+              <img src="https://www.openenglish.com/wp-content/uploads/2021/11/character-curso-x2.png" alt="" width="100%">
+            </div>
+            <div class="col-12 col-md-5">
+              
+              <p>A través del ingles, ESchool te brinda la oportunidad de conseguir un trabajo, un nuevo amor o simplemente una competencia nueva.</p>
+              <p>Nuestro modelo, que combina el autoaprendizaje, las clases en directo con profesores expertos y la posibilidad de practicar con más de 120 millones de hablantes nativos a escala mundial, ha demostrado ser la mejor manera de aprender un idioma.</p>
+              <h5>Evalúa tus conocimientos</h5>
+              <p>Ponte a prueba y recibe certificados oficiales de English School una de las empresas educativas con más prestigio a escala mundial. Nuestras lecciones utilizan el Marco Común Europeo de Referencia (MCER), reconocido internacionalmente, para el aprendizaje de ingles. Comparte los resultados de tu duro trabajo y llénate de orgullo.</p>
+              
+              
+            </div>
+            
+          </div>
+        </div>
+
+
+      </section>
+
+      <section id="contacto">
+        <div class="container">
+          <h3>Contactanos!</h3>
+          
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="dato p-4">
+                <p><strong>Telefono:</strong>  +54 011-4235770</p>
+                <p><strong> Email:</strong> contacto@eschool.com</p>
+                <p><strong>Direccion:</strong>  Pavón 1350 - Buenos Aires - Argentina </p>
+              </div>
+            
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="dato p-4 ">
+                <div class="mb-3 ">
+                
+                  <label for="exampleFormControlInput1" class="form-label">Ingrese su correo:</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Escriba su Consulta:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+            </div>
+            
+            </div>
+               
+          </div>
+        </div>
+      </section>
+      
+      <section id="redes">
+        <div class="container">
+          <div class="row">
+            <div id="seguir">
+              <h3>!Siguenos!</h3>
+            </div>
+            <div class="col-2 col-md-1">
+              <div>
+                <a href="https://m.facebook.com/juan.manuel.paredes1500" target="_blank"><img src="/img/redes/facebook.png" alt="redSocial" class="imsocial"></a>
+              </div>
+            </div>
+            <div class="col-2 col-md-1">
+              <div>
+                <a href="https://www.instagram.com/" target="_blank"><img src="/img/redes/instagram.png" class="imsocial" alt="redSocial"></a>
+              </div>
+            </div>
+            <div class="col-2 col-md-1">
+              <div>
+                <a href="https://twitter.com/" target="_blank"><img src="/img/redes/twitter.png" class="imsocial" alt="redSocial">
+              </a>
+            </div>
+            </div>
+            <div class="col-2 col-md-1">
+              <div>
+                <a href="" target="_blank"><img src="/img/redes/whatsapp.png" class="imsocial" alt="redSocial"></a>
+              </div>
+            </div>
+            <div class="col-2 col-md-1">
+              <div>
+                <a href="https://www.youtube.com/" target="_blank"><img src="/img/redes/youtube.png" class="imsocial" alt="redSocial"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div id="foot">
+        
+        <div class="container">
+          <div class="row ">
+            <div class="col-9 col-md-3">
+              <img src="/img/ES footer.png" width="100%"  alt="">
+            </div>
+            <div class="col-9 col-md-3">
+              <div class="apartado d-flex flex-column">
+                
+                <h4>Nuestra Plataforma</h4>
+                
+                <a href="">Curso de inglés</a>
+                <a href="">Inglés Técnico Profesional</a>
+                <a href="">Cómo Funciona</a>
+                <a href="">Opiniones</a>
+                <a href="">Planes y Precios</a>
+                <a href="">Para Empresas</a>
+              </div>
+            </div>
+            <div class="col-9 col-md-3" >
+              <div class="apartado d-flex flex-column">
+                
+                  <h4>Recursos de Inglés</h4>
+                
+                <a href="">Clases de Inglés Gratis</a>
+                <a href="">English School Blog</a>
+                <a href="">Garantias</a>
+    
+              </div>
+            </div>
+            <div class="col-9 col-md-3">
+              <div class="apartado d-flex flex-column">
+                
+                <h4>Soporte</h4>
+                <a href="">Soporte</a>
+                <a href="">Preguntas Frecuentes</a>
+                <a href="">Nuestras Oficinas</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.container-fluid img{
+    width: 15rem;
+    padding-right : 0rem;
+
+}
+.container-fluid nav{
+    background-color: blue;
+}
+
+
+.sesion button{
+    color:  #dadad7;
+    border-color:  #dadad7;
+}
+
+.limitado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(30, 255, 0, 0.589);
+    text-align: center;
+    
+}
+.limitado p{
+    padding-top: 1rem;
+    padding-right: .5rem;
+}
+.limitado button{
+    border-radius: 15px;
+
+}
+
+.grillaTop{
+    padding-top: 3rem;
+
+}
+.grillaTop h3{
+    padding-bottom: 1rem;
+}
+
+.card{
+    margin-top: 1rem;
+}
+.herramienta .row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.herramienta img{
+    width: 100%;
+}
+
+#funcionalidad{
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+#nosotros{
+    margin-top: 3rem;
+}
+#nosotros h3, #profesores h3, #contacto h3{
+    background-color: #40b7adcc;
+    border-radius: 15px;
+    padding: .5rem;
+}
+#nosotros .row{
+    margin-top: 2rem;
+
+}
+#profesores{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+#profesores img{
+    width: 100%;
+}
+
+#contacto{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+.dato{
+    margin-top: 2rem;
+    background-color: hsla(175, 48%, 49%, 0.31) ;
+    border-radius: 15px;
+}
+
+#seguir{
+    
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.imsocial{
+    width: 70%;
+}
+#redes .row{
+    display: flex;
+    justify-content: center;
+}
+#redes h3{
+    text-align: center;
+
+}
+/* --------------------------------------------------- */
+
+#foot{
+    margin-top: 3rem;
+    padding-top: 2rem;
+    background-color: hsla(175, 48%, 49%, 0.31);
+}
+#foot{
+    display: flex;
+    justify-content: center;
+   
+}
+.apartado a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: .5rem;
+    
+  
+
+}
+
+label{
+    padding-top: 1rem;
+}
+.terminos input{
+    margin-top: 1rem;
+   
+}
+.terminos label{
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+
